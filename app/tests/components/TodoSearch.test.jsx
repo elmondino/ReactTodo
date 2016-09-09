@@ -1,8 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var expect = require('expect');
-var $ = require('jQuery');
 var TestUtils = require('react-addons-test-utils');
+var expect = require('expect');
+var $ = require('jquery');
 
 var TodoSearch = require('TodoSearch');
 
@@ -20,7 +20,7 @@ describe('TodoSearch', () => {
     TestUtils.Simulate.change(todoSearch.refs.searchText);
 
     expect(spy).toHaveBeenCalledWith(false, 'Dog');
-  }),
+  });
 
   it('should call onSearch with proper checked value', () => {
     var spy = expect.createSpy();
